@@ -1,165 +1,111 @@
-/* Reset default styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body styles */
+/* Global Styles */
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  color: #fff;
-  background-color: #000;
+  color: #FFF;
 }
 
-/* Header styles */
-header {
-  background-color: #000;
-  padding: 20px;
-  /* Add your styles for the header */
-}
-
-/* Main section styles */
-.main {
-  /* Add your styles for the main section */
-}
-
-/* Hero section styles */
-.hero-section {
-  background-image: url('hero-image.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-content {
+/* Hero Section */
+.hero {
+  background: black;
+  padding: 100px 0;
   text-align: center;
 }
 
-.hero-content h1 {
-  font-size: 36px;
-  font-weight: bold;
-  color: #fff;
-  margin-bottom: 10px;
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.hero-content p {
-  font-size: 18px;
-  color: #fff;
+.hero h1 {
+  font-size: 36px;
   margin-bottom: 20px;
 }
 
-.hero-content .btn {
-  background-color: #ffd700;
-  color: #000;
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  display: inline-block;
   padding: 10px 20px;
-  border-radius: 4px;
+  background: gold;
+  color: black;
   text-decoration: none;
   font-weight: bold;
+  border-radius: 4px;
 }
 
-/* Latest articles styles */
+/* Latest Articles */
 .latest-articles {
-  /* Add your styles for the latest articles section */
-}
-
-.latest-articles .container {
-  padding: 40px;
-}
-
-.latest-articles h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #ffd700;
+  background: black;
+  padding: 50px 0;
 }
 
 .article-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px
+.article-card {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  overflow: hidden;
+  color: #FFF;
+  text-decoration: none;
 }
 
-.article-card {
-  background-color: #000;
+.card-header img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-body {
   padding: 20px;
 }
 
-.article-card img {
-  width: 100%;
-  height: auto;
+.card-title {
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
-.article-card h3 {
-  font-size: 18px;
-  font-weight: bold;
-  color: #ffd700;
-  margin-bottom: 5px;
+.card-description {
+  font-size: 16px;
 }
 
-.article-card p {
-  font-size: 14px;
-  color: #fff;
+/* Embedded Podcast Section */
+.podcast-section {
+  background: black;
+  padding: 50px 0;
+  text-align: center;
 }
 
-/* Featured section styles */
-.featured-section {
-  /* Add your styles for the featured section */
+.podcast-content {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.featured-section .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 40px;
-}
-
-.featured-image img {
-  width: 300px;
-  height: auto;
-}
-
-.featured-title {
-  width: 60%;
-}
-
-.featured-title h2 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #ffd700;
-  margin-bottom: 10px;
-}
-
-.featured-title p {
-  font-size: 14px;
-  color: #fff;
+.podcast-content h2 {
+  font-size: 28px;
   margin-bottom: 20px;
 }
 
-.featured-title .btn {
-  background-color: #ffd700;
-  color: #000;
-  padding: 10px 20px;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: bold;
+.podcast-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
 }
 
-/* Footer styles */
-footer {
-  background-color: #000;
+/* Footer */
+.footer {
+  background: black;
   padding: 20px;
   text-align: center;
 }
 
-footer p {
+.footer p {
+  margin: 0;
   font-size: 14px;
-  color: #fff;
 }
-
-/* Add your additional CSS styles here */
-
